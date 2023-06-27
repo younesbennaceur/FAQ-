@@ -1,0 +1,64 @@
+body{
+  background-image: url(./wp11258908.png);
+  
+background-repeat: no-repeat;
+background-size: cover;
+height : 100vh;
+display : flex;
+justify-content: center;
+align-items: center;
+color: aliceblue;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.faq{
+    background-color: rgba(0, 0, 0, 0.5);
+ padding: 20px;
+    width: 50%;
+   
+
+}
+h2{
+   text-align: center;
+   font-size: 2rem;
+   margin-bottom: 15px;
+    
+}
+.faq .container .qestion{
+    margin-bottom: 12px;
+    font-size: 1.5rem;
+    color: rgb(56, 56, 255);
+    border-bottom: solid 1px rgb(255, 255, 255);
+    padding: 10px 0;
+    position: relative;
+}
+.faq .container .qestion::after{
+    content: "+";
+    position: absolute;
+    right: 5px;
+    color: rgb(255, 255, 255);
+    
+
+}
+.faq .container .answer{
+    margin-bottom: 12px;
+    
+    height: 0;
+    overflow: hidden;
+    transition: .5s;
+}
+.faq .container.active .answer {
+    height: 90px;
+    transition: .5s;
+    color: aliceblue;
+}
+.faq .container.active .qestion::after{
+    content: "-";
+    transition: .5s;
+  
+    
+}
